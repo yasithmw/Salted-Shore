@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.grainy-overlay {
+  background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaRwqGvAjSdio6ar6UbppqSmhgfAR5ph6mGySIJbzSdCn7AQC1NHkMiPHaf051g7ilISa6fYZxP1mZSdyVpSVHizgQpGs4jjoICwTyZHZXG_EE7qTe9o2gIrkr0cYtxO0KoRb6X9oXnXHzV7jI0mNUOo_RHWhEgiKHZm7iNTVvTiav_-Zckfa_HzyGYCfE6O1x5VCQ8HO9F-S15vJR9yoms7YPRZPqwIlIqd5ludieXVlsIBnTYWlCFrckbQrawv3iXJbz6YSMXPw3");
+  opacity: 0.15;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
