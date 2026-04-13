@@ -1,14 +1,16 @@
 export default function HeroSection() {
   return (
     <section className="relative h-screen w-full overflow-hidden flex flex-col justify-end p-12 md:p-24">
-      {/* Background image */}
+      {/* Background video */}
       <div className="absolute inset-0 z-0">
-        <img
-          alt="A premium, high-fidelity painterly illustration of a Sri Lankan sea shore and sea view. The sea is a prominent Aqua Wave color with crisp white breaking waves."
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDteFBW0Yzrs2ZV3DffDEsVbBKGhUEW_pyn11rvBwIiBYrsUDTapfQRqO9r6J02UDJIHsFgAfuFnKivhhKbVY9vkL15jitELsVzI__79gX0rv7eJV5L98WAOsyolT9IPKZWOcyXbBs04RRIdKB4TTawcUKBifHj6_S_WLflWF-Rp3On8WD0sYlAWDYyykxsWeLGXwX3SMEHZyueYUgYBDFyjhM4fWVUsOaP6x17DnHTFSPaQWZpUsnKFhff6rawvuQ6atxjyvq4NMP3"
+          src="/Hero2.mp4"
         />
-        <div className="absolute inset-0 grainy-overlay pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
       </div>
 
@@ -35,15 +37,15 @@ export default function HeroSection() {
       </div>
 
       {/* Spinning stamp */}
-      <div className="absolute bottom-12 right-12 md:bottom-24 md:right-24 z-10">
+      {/* <div className="absolute bottom-6 right-6 z-10">
         <div className="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center animate-spin-slow">
           <img
             alt="Salted Shore Logo Stamp"
             className="w-full h-full object-contain opacity-60"
-            src="/logo stamp.jpg"
+            src="/logo stamo 2.svg"
           />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
